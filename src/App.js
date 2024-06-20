@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Sidebar from "./sidebar";
+import LivingWillForm from "./LivingWillForm";
+import { FormProvider } from "./FormContext";
+import HealthcareForm from "./HealthcareForm";
+import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const forms = ["Living Will", "Healthcare Power of Attorney"];
+	const [activeForm, setActiveForm] = useState(forms[0]);
+	const [showSidebar, setShowSidebar] = useState(true);
+
+	const renderForm = () => {
+		switch (activeForm) {
+			case "Living Will":
+				return <LivingWillForm />;
+			case "Healthcare Power of Attorney":
+				return <HealthcareForm />;
+			default:
+				return null;
+		}
+	};
+
+	return (
+		<FormProvider>
+			<div className="flex h-screen bg-gray-200">
+				{showSidebar ? (
+					<Sidebar forms={forms} activeForm={activeForm} setActiveForm={setActiveForm} />
+				) : (
+					<></>
+				)}
+				<main className="flex-1 p-8 overflow-y-auto">{renderForm()}</main>
+			</div>
+		</FormProvider>
+	);
 }
 
 export default App;
