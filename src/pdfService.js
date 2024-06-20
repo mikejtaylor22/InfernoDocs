@@ -4,7 +4,7 @@ import { PDFDocument } from "pdf-lib";
 export const generatePDF = async (finalFormData) => {
 	try {
 		// Load the PDF file from the assets folder
-		const response = await fetch("%PUBLIC_URL%/willtemplate.pdf");
+		const response = await fetch("/InfernoDocs/willtemplate.pdf");
 		const pdfFile = await response.arrayBuffer();
 
 		// Create a new PDF document from the loaded file

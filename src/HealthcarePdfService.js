@@ -4,7 +4,7 @@ import { PDFDocument } from "pdf-lib";
 export const generateHealthcarePDF = async (finalFormData) => {
 	try {
 		// Load the PDF file from the assets folder
-		const response = await fetch("/healthcaretemplate.pdf");
+		const response = await fetch("/InfernoDocs/healthcaretemplate.pdf");
 		const pdfFile = await response.arrayBuffer();
 
 		// Create a new PDF document from the loaded file
