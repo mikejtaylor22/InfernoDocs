@@ -24,7 +24,7 @@ const OtherContactsForm = ({ addNewContact }) => {
 		<div className="p-4 bg-gray-100 shadow-md rounded-lg">
 			<div className="mb-6">
 				<h3 className="text-lg font-semibold mb-4">Agent</h3>
-				<div className="grid grid-cols-4 gap-2">
+				<div className="grid grid-cols-1 gap-2">
 					<div>
 						<label className="block mb-1 text-xs">Name</label>
 						<input
@@ -39,21 +39,21 @@ const OtherContactsForm = ({ addNewContact }) => {
 					</div>
 
 					<div>
-						<label htmlFor="relationship" className="block mb-1 text-xs ml-4">
+						<label htmlFor="relationship" className="block mb-1 text-xs">
 							Relationship
 						</label>
 						<input
 							type="text"
 							id="relationship"
 							name="relationship"
-							className="w-full px-2 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newContact.relationship}
 							onChange={handleOtherPersonChange}
 							required
 						/>
 					</div>
 				</div>
-				<div className="mt-4 w-1/2">
+				<div className="mt-4 w-full">
 					<label htmlFor="streetAddress" className="block mb-1 text-xs">
 						Street Address
 					</label>
@@ -67,9 +67,9 @@ const OtherContactsForm = ({ addNewContact }) => {
 						required
 					/>
 				</div>
-				<div className="grid grid-cols-4 gap-2 mt-4">
+				<div className="grid grid-cols-1 gap-2 mt-2">
 					<div>
-						<label htmlFor="city" className="block mb-1 text-xs px-1">
+						<label htmlFor="city" className="block mb-1 text-xs">
 							City
 						</label>
 						<input
@@ -83,23 +83,23 @@ const OtherContactsForm = ({ addNewContact }) => {
 						/>
 					</div>
 					<div>
-						<label htmlFor="state" className="block mb-1 text-xs ml-4 pl-1">
+						<label htmlFor="state" className="block mb-1 text-xs">
 							State
 						</label>
 						<input
 							type="text"
 							id="state"
 							name="state"
-							className="w-full px-2 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newContact.state}
 							onChange={handleOtherPersonChange}
 							required
 						/>
 					</div>
 				</div>
-				<div className="grid grid-cols-4 gap-2 mt-4">
+				<div className="grid grid-cols-1 gap-2 mt-4">
 					<div>
-						<label htmlFor="zip" className="block mb-1 text-xs pl-1">
+						<label htmlFor="zip" className="block mb-1 text-xs">
 							ZIP
 						</label>
 						<input
@@ -113,14 +113,14 @@ const OtherContactsForm = ({ addNewContact }) => {
 						/>
 					</div>
 					<div>
-						<label htmlFor="phoneNumber" className="block mb-1 text-xs pl-1 ml-4">
+						<label htmlFor="phoneNumber" className="block mb-1 text-xs">
 							Phone Number
 						</label>
 						<input
 							type="tel"
 							name="phoneNumber"
 							id="phoneNumber"
-							className="w-full px-1 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-1 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newContact.phoneNumber}
 							onChange={handleOtherPersonChange}
 							required
@@ -135,7 +135,7 @@ const OtherContactsForm = ({ addNewContact }) => {
 						type="text"
 						id="county"
 						name="county"
-						className="w-1/4 px-1 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+						className="w-full px-1 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 						value={newContact.county}
 						onChange={handleOtherPersonChange}
 						required

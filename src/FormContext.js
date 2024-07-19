@@ -14,6 +14,9 @@ export const FormProvider = ({ children }) => {
 		agents: [],
 		guardians: [],
 		estateGuardians: [],
+		//for durable financial
+		isSpringingDurable: false,
+		clientCounty: "",
 	});
 
 	return (

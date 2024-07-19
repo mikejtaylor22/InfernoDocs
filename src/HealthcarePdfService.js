@@ -77,9 +77,9 @@ export const generateHealthcarePDF = async (finalFormData) => {
 			console.warn("Name field not found in the PDF form.");
 		}
 
-		if (finalFormData.agents) {
+		if (finalFormData.otherContacts) {
 			let index = 0;
-			for (const agent of finalFormData.agents) {
+			for (const agent of finalFormData.otherContacts) {
 				let numString = "";
 				switch (index) {
 					case 0:

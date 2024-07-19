@@ -52,7 +52,7 @@ const AgentForm = ({ addNewAgent, type }) => {
 		<div className="p-4 bg-gray-100 shadow-md rounded-lg">
 			<div className="mb-6">
 				<h3 className="text-lg font-semibold mb-4">{formTitle}</h3>
-				<div className="grid grid-cols-4 gap-2">
+				<div className="grid grid-cols-1 gap-2">
 					<div>
 						<label className="block mb-1 text-xs px-1">Name</label>
 						<input
@@ -67,21 +67,21 @@ const AgentForm = ({ addNewAgent, type }) => {
 					</div>
 
 					<div>
-						<label htmlFor="relationship" className="block mb-1 text-xs ml-4 px-1">
+						<label htmlFor="relationship" className="block mb-1 text-xs px-1">
 							Relationship
 						</label>
 						<input
 							type="text"
 							id="relationship"
 							name="relationship"
-							className="w-full px-2 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newAgent.relationship}
 							onChange={handleOtherPersonChange}
 							required
 						/>
 					</div>
 				</div>
-				<div className="mt-4">
+				<div className="mt-2">
 					<label htmlFor="streetAddress" className="block mb-1 text-xs px-1">
 						Street Address
 					</label>
@@ -89,13 +89,13 @@ const AgentForm = ({ addNewAgent, type }) => {
 						type="text"
 						id="streetAddress"
 						name="streetAddress"
-						className="w-1/2 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+						className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 						value={newAgent.streetAddress}
 						onChange={handleOtherPersonChange}
 						required
 					/>
 				</div>
-				<div className="grid grid-cols-4 gap-2 mt-4">
+				<div className="grid grid-cols-1 gap-2 mt-2">
 					<div>
 						<label htmlFor="city" className="block mb-1 text-xs px-1">
 							City
@@ -111,21 +111,21 @@ const AgentForm = ({ addNewAgent, type }) => {
 						/>
 					</div>
 					<div>
-						<label htmlFor="state" className="block mb-1 text-xs px-1 ml-4">
+						<label htmlFor="state" className="block mb-1 text-xs px-1">
 							State
 						</label>
 						<input
 							type="text"
 							id="state"
 							name="state"
-							className="w-full px-2 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newAgent.state}
 							onChange={handleOtherPersonChange}
 							required
 						/>
 					</div>
 				</div>
-				<div className="grid grid-cols-4 gap-2 mt-4">
+				<div className="grid grid-cols-1 gap-2 py-1">
 					<div>
 						<label htmlFor="zip" className="block mb-1 text-xs px-1">
 							ZIP
@@ -141,14 +141,14 @@ const AgentForm = ({ addNewAgent, type }) => {
 						/>
 					</div>
 					<div>
-						<label htmlFor="phoneNumber" className="block mb-1 text-xs px-5">
+						<label htmlFor="phoneNumber" className="block mb-1 text-xs">
 							Phone Number
 						</label>
 						<input
 							type="tel"
 							name="phoneNumber"
 							id="phoneNumber"
-							className="w-full px-2 ml-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+							className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 							value={newAgent.phoneNumber}
 							onChange={handleOtherPersonChange}
 							required
@@ -163,7 +163,7 @@ const AgentForm = ({ addNewAgent, type }) => {
 						type="text"
 						id="county"
 						name="county"
-						className="w-1/4 px-1 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
+						className="w-full px-1 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300"
 						value={newAgent.county}
 						onChange={handleOtherPersonChange}
 						required
