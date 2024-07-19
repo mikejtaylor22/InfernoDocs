@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/InfernoDocs/static/css/main.8b0bfec2.css",
-    "main.js": "/InfernoDocs/static/js/main.d9b2c8fd.js",
+    "main.css": "/InfernoDocs/static/css/main.457907ac.css",
+    "main.js": "/InfernoDocs/static/js/main.ec147e02.js",
     "static/js/453.275a57c8.chunk.js": "/InfernoDocs/static/js/453.275a57c8.chunk.js",
     "index.html": "/InfernoDocs/index.html",
-    "main.8b0bfec2.css.map": "/InfernoDocs/static/css/main.8b0bfec2.css.map",
-    "main.d9b2c8fd.js.map": "/InfernoDocs/static/js/main.d9b2c8fd.js.map",
+    "main.457907ac.css.map": "/InfernoDocs/static/css/main.457907ac.css.map",
+    "main.ec147e02.js.map": "/InfernoDocs/static/js/main.ec147e02.js.map",
     "453.275a57c8.chunk.js.map": "/InfernoDocs/static/js/453.275a57c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b0bfec2.css",
-    "static/js/main.d9b2c8fd.js"
+    "static/css/main.457907ac.css",
+    "static/js/main.ec147e02.js"
   ]
 }

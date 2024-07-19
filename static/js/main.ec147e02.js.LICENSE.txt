@@ -24,6 +24,8 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
+/*! pako 2.1.0 https://github.com/nodeca/pako @license (MIT AND Zlib) */
+
 /**
  * @license React
  * react-dom.production.min.js
